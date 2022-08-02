@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: "poppings", sans-serif;
+}
+
+:root{
+  --primary: #151515;
+  --secondary: #37eb54;
+  --color: #fff;
+}
+
+body{
+  display: grid;
+  background-color: var(--primary);
+  color: var(--color);
+}
+
+.navigation{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr repeat(4, 0.1fr);
+  background-color: var(--secondary);
+  height: 70px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5rem;
+  cursor: pointer;
+
+}
+
+.nav-btn{
+padding: 5px;
+border: none;
+outline: none;
+border-radius: 4px;
+background: none;
+font-size: 18px;
+transition: all 0.4s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color);
+}
+
+main i{
+  font-size: 10rem;
+  color: var(--secondary);
+  margin: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.span-txt{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav-span{
+  padding: 2px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.quote{
+font-size: 2rem;
+font-weight: bold;
+text-shadow: 0 0 12px #fff;
+}
+
+.expansion{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-gap: 5px;
+  background-color: var(--secondary);
+  width:65px;
+  height: 35px;
+  text-align: center;
+  overflow:hidden;
+  border-radius: 4px;
+  transition: all 0.9s ease-in-out;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 6px;
+  margin-left: 6rem;
+}
+
+.expansion:hover{
+  width: 270px;
+}
+
+/*Hover Effects*/
+
+.nav-btn:hover{
+ border: 2px solid #fff;
+ box-shadow: 0 0 10px #fff;
+ letter-spacing: 1.5px;
+}
+
+main i:hover{
+  font-size: 17rem;
+}
